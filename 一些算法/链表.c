@@ -77,7 +77,7 @@ void concatenateLists(struct Student* head_A,struct Student* head_B){
 //打印一个链表的全部内容
 void printList(struct Student *head){
     struct Student *current = head;
-    printf("*********\n");
+    // printf("*********\n");
     while (current!=NULL)
     {
         printf("%d %d\n",current->Sno,current->score);

@@ -32,7 +32,6 @@ int main(void) {
     printList(head_A);
     return 0;
 }
-
 //排序节点
 void sortNode(struct Student *head){
     struct Student *current = head;

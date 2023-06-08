@@ -1,0 +1,16 @@
+{
+  "configurations": [
+    
+  {
+    "name": "(Windows) 启动",
+    "type": "cppvsdbg",
+    "request": "launch",
+    "program": "C:\\Users\\Administrator\\Desktop\\Code-Learning\\一些算法\\hello.exe",
+    "args": [],
+    "stopAtEntry": false,
+    "cwd": "${fileDirname}",
+    "environment": [],
+    "console": "externalTerminal"
+  }
+  ]
+}

@@ -20,12 +20,13 @@ int main(void) {
     scanf("%d %d",&a,&b);
     for (size_t i = 0; i < a; i++)
     {
+        printf("A的学号和成绩:");
         scanf("%d %d",&Sno,&score);
         inserNode(&head_A,Sno,score);
     }
     for (size_t i = 0; i < b; i++)
     {
-        printf("学号和成绩:");
+        printf("B的学号和成绩:");
         scanf("%d %d",&Sno,&score);
         inserNode(&head_B,Sno,score);
     }

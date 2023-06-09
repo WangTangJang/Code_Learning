@@ -1,7 +1,11 @@
 #include <stdio.h>
-int main(int argc, char const *argv[])
-{
-    int i = 0;
-    printf("Hello World\n");
+#include <stdlib.h>
+#include <windows.h>
+
+int main() {
+    UINT codePage = GetConsoleOutputCP();
+
+    printf("代码格式为: %u\n", codePage);
+    getchar();
     return 0;
 }

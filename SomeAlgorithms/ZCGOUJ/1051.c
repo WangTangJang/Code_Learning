@@ -16,17 +16,17 @@ int main(void) {
     struct Student* head_A=NULL;
     struct Student* head_B=NULL;
     int a,b,Sno,score;
-    printf("链表A、B分别有多少列:");
+    // printf("链表A、B分别有多少列:");
     scanf("%d %d",&a,&b);
     for (size_t i = 0; i < a; i++)
     {
-        printf("A的学号和成绩:");
+        // printf("A的学号和成绩:");
         scanf("%d %d",&Sno,&score);
         inserNode(&head_A,Sno,score);
     }
     for (size_t i = 0; i < b; i++)
     {
-        printf("B的学号和成绩:");
+        // printf("B的学号和成绩:");
         scanf("%d %d",&Sno,&score);
         inserNode(&head_B,Sno,score);
     }
@@ -80,10 +80,10 @@ void concatenateLists(struct Student* head_A,struct Student* head_B){
 //打印一个链表的全部内容
 void printList(struct Student *head){
     struct Student *current = head;
-    printf("排序后\n");
+    // printf("排序后\n");
     while (current!=NULL)
     {
-        printf("学号%d 成绩%d\n",current->Sno,current->score);
+        printf("%d %d\n",current->Sno,current->score);
         current=current->next;
     }
 }

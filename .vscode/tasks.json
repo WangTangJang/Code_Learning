@@ -10,7 +10,7 @@
 				"-g",
 				"${file}",
 				"-o",
-				"${workspaceFolder}\\SomeAlgorithms\\EXE\\${fileBasenameNoExtension}.exe"
+				"${workspaceFolder}\\SomeAlgorithms\\EXE\\Test.exe"
 			],
 			"options": {
 				"cwd": "${fileDirname}"

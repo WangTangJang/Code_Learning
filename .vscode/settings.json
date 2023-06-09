@@ -1,0 +1,9 @@
+{
+    "files.associations": {
+        "deque": "c",
+        "vector": "c",
+        "string_view": "c",
+        "random": "c",
+        "stdio.h": "c"
+    }
+}

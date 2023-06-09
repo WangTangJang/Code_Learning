@@ -1,10 +1,10 @@
 {
   "configurations": [
   {
-    "name": "(gdb) 启动",
+    "name": "调试",
     "type": "cppdbg",
     "request": "launch",
-    "program": "${workspaceFolder}/SomeAlgorithms/EXE/${fileBasenameNoExtension}.exe",
+    "program": "${workspaceFolder}/SomeAlgorithms/EXE/Test.exe",
     "args": [],
     "stopAtEntry": false,
     "cwd": "${fileDirname}",

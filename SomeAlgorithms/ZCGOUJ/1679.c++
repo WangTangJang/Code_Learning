@@ -1,16 +1,28 @@
-// 伦敦奥运会要到了，小鱼在拼命练习游泳准备参加游泳比赛，可怜的小鱼并不知道鱼类是不能参加人类的奥运会的。
-// 这一天，小鱼给自己的游泳时间做了精确的计时（本题中的计时都按24小时制计算），它发现自己从a时b分一直游泳到当天的c时d分，请你帮小鱼计算一下，它这天一共游了多少时间呢？
-// 小鱼游的好辛苦呀，你可不要算错了哦。
+// 试计算在区间 1 到 n的所有整数中，数字x(0 ≤ x ≤ 9)共出现了多少次？
+// 例如，在 1到11中，即在 1,2,3,4,5,6,7,8,9,10,11 中，数字 1 出现了 4 次。
+
 #include <iostream>
+
 using namespace std;
 
-int main() {
-    int a, b, c, d;
-    cin >> a >> b >> c >> d;
+int main(){
     
-    int hour = c - a;
-    int minute = 60-b+d;
-    
-    cout << hour << ":" << minute << endl;
+    int n, x;
+
+    cin >> n >> x;
+    int count = 0;
+    for(int i = 1; i <= n; i++){
+        //获取i有多少位,且遍历每一位数
+        int temp = i;
+        while(temp > 0){
+            //提取一个整数的个位数
+            int digit = temp % 10;
+            if(digit == x){
+                count++;
+            }
+            temp /= 10;//让当前十位变成个位
+        }
+    }
+    cout << count << endl;
     return 0;
 }

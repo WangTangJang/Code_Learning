@@ -11,6 +11,8 @@
 // 输出
 // 1个整数，表示马路上剩余的树的数目。
 
+
+
 // 500 3   150 300   100 200    470 471
 // 298
 #include <iostream>
@@ -21,16 +23,26 @@ int main()
     cin >> L >> M;
     int count = 0;
     int trees[L + 1];//存放树的个数，初始值为0，表示没有任何树，值为1，表示有树，
-    
-    for (size_t i = 0; i < L; i++)
+    //初始化，让树种满
+    for (int i = 0; i <= L; i++)
     {
-        trees[i] = 0;
+        trees[i] = 1;
     }
+    // 输入区域，然后将区域内的树移走
     for (int i = 0; i < M; i++)
     {
         int start, end;
         cin >> start >> end;
-        
+        for (int j = start; j <= end; j++)
+        {
+            trees[j] = 0;
+        }
     }
+    // 统计剩余种了树的个数
+    for (int i = 0; i <= L; i++)
+    {
+        count += trees[i];
+    }
+    cout << count << endl;
     return 0;
 }

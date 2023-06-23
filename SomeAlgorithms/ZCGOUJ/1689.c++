@@ -11,13 +11,33 @@
 // 9
 #include <iostream>
 using namespace std;
-
+int countWords(string s);
 int main(){
     //输入一个字符串
     string str;
     getline(cin, str);
-    cout << str<< endl;
-    //获取字符串中每一个字符
-    
+    int count = 0;
+    count = countWords(str);
+    cout << count << endl;
     return 0;
+}
+int countWords(string str){
+    int count = 0;
+    bool inword = false;
+    for (char c : str){
+        if (c == ' ')
+        {
+            if (inword)
+            {
+                inword = false;
+            }
+        }
+        else{
+            if (!inword){
+                inword = true;
+                count++;
+            }
+        }
+    }
+    return count;
 }

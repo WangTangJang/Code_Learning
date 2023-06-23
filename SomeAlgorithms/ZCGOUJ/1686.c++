@@ -21,7 +21,6 @@ int main() {
     while (std::cin >> num && num != 0) {
         numbers.push_back(num);
     }
-    
     // 打印输入的整数,倒序
     for (int i = numbers.size() - 1; i >= 0; i--) {
         std::cout << numbers[i] << " ";

@@ -8,7 +8,6 @@
 class Solution {
 public:
     int romanToInt(string s) {
-        char pres;
         int result=0;
         for (int i = 0; i < s.length(); i++)
         {   

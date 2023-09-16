@@ -7,5 +7,5 @@
     "markdown-image.base.fileNameFormat": "${YY}-${MM}-${DD} ${HH}-${mm}-${ss}",
     "markdown-image.base.urlEncode": false,
     // 修改与关闭资源管理器冲突的按键
-    
+
 }

@@ -8,6 +8,8 @@
 
 *就是笔记本直接放在身上，压得小腹不舒服，遗憾*。
 
+*以SSH连接远程服务器，十分方便*.
+
 - ls 巡视领土
 - cd 游走
 - whoami
@@ -19,4 +21,6 @@
   - 其中-9是SIGKILL的标识符
   - SIGKILL中的SIG是Signal的缩写
   - `还有就是:CHATGPT真好用!`
+- tcpdump port []
+  - 查看端口网络
   

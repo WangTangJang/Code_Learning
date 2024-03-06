@@ -1,6 +1,48 @@
+# 纯量形式
 name: wang
 age: 18
 
+# 对象形式
 person:
   name: zhang
   age: 20
+
+# 数组形式
+list:
+  - zhao
+  - 24
+
+# 对象数组形式
+persons:
+  name: li
+  age: 30
+  address:
+    - beijing
+    - shanghai
+
+# 多文档模式配置
+---
+server:
+  port: 8081
+
+spring:
+  config:
+    activate:
+      on-profile: dev
+---
+server:
+  port: 8082
+
+spring:
+  config:
+    activate:
+      on-profile: test
+---
+server:
+  port: 8087
+
+spring:
+  config:
+    activate:
+      on-profile: pro
+---

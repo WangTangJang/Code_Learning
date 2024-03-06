@@ -14,16 +14,28 @@ public class HelloController {
     @Value("${name}")
     private String name;
 
+    @Value("${list[1]}")
+    private String person_1;
+
+    // 直接访问 Environment
     @Autowired
     private Environment environment;
 
+    // ConfigurationProperties注解的方式获取配置文件中的值
     @Autowired
     private Person person;
 
+    @Autowired
+    private Persons persons;
+
     @RequestMapping("/Hello")
     public String Hello(){
+        String[] address = persons.getAddress();
 
-        return name+" " + environment.getProperty("age")+"和"+person.toString();
+        for (String s : address) {
+            System.out.println(s);
+        }
+        return persons.toString();
     }
 }
 

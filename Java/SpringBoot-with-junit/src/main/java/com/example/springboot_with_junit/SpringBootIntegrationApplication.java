@@ -1,4 +1,4 @@
-package com.example.springbootintegration;
+package com.example.springboot_with_junit;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

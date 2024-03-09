@@ -2,6 +2,7 @@ package com.example.module1;
 
 import com.example.config.EnableUser;
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
 import com.example.config.UserConfig;
@@ -13,7 +14,7 @@ public class Module1Application {
 
     public static void main(String[] args) {
         ConfigurableApplicationContext context = SpringApplication.run(Module1Application.class, args);
-        Object user = context.getBean("user");
+        Object user = context.getBean("xxx");
         System.out.println(user);
     }
 

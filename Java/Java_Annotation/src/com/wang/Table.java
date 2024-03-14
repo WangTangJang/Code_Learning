@@ -3,6 +3,7 @@ package com.wang;
 import java.lang.annotation.*;
 import java.lang.reflect.Field;
 
+// 用反射读取注解的信息，模拟处理注解信息的流程
 class Main{
     public static void main(String[] args) throws ClassNotFoundException {
         // 都会获取 Student 类的 Class 对象。

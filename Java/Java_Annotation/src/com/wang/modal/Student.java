@@ -1,4 +1,6 @@
 package com.wang.modal;
 
-public class Student  {
+import com.wang.MyAnnotation;
+
+public class Student  extends Person{
 }

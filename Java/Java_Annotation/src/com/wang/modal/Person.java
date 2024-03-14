@@ -1,5 +1,8 @@
 package com.wang.modal;
 
+import com.wang.MyAnnotation;
+
+@MyAnnotation("hi")
 public class Person {
     private String name;
     private int age;

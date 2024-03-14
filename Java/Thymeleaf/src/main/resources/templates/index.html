@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ch" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Spring Boot Thymeleaf Example</title>
+</head>
+<body>
+
+<!--Thymeleaf字符串拼接-->
+<!--1. 使用字符串连接运算符 + -->
+<div th:text="'Hello, ' + ${message} + '!  '+'字符串连接运算符 +'"></div>
+<!--2. **使用字符串连接运算符`+`和引号字面值**-->
+<div th:text="${'Hello, ' + message + '!'+'使用字符串连接运算符`+`和引号字面值'}"></div>
+
+<!--无效-->
+<!--&lt;!&ndash;3. **使用字符串连接运算符`||`**&ndash;&gt;-->
+<!--<div th:text="'Hello, ' || ${message} || '!'"></div>-->
+
+
+<!--4. **使用预处理表达式`|`**-->
+<div th:text="|你好，${message}|">Hello</div>
+<p>Hello, ${name}! You are ${age} years old.</p>
+<div th:object="${user}">
+    <p th:text="|姓名：*{name}|">Name</p>
+    <p th:text="|邮箱：*{email}|">Name</p>
+</div>
+<div th:replace="~{component :: #com1}"></div>
+<div th:insert="~{component :: com3(传递的数据)}">
+</div>
+
+<div th:insert="~{component :: com4(~{::#message})}">
+    <p  id="message">携带</p>
+</div>
+
+</body>
+
+<!-- 通过thymeleaf的方式引入js变量-->
+<script th:inline="javascript">
+    let message = [[${message}]];
+    console.log(message);
+</script>
+</html>

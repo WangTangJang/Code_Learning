@@ -9,8 +9,8 @@ public class Hello{
 		Map<String,Object> map = new HashMap<>();
 		map.put("No.1",2);
 		map.put("No.1",3);
-		map.put("No.1",1);
-		// map.clear();
+		map.put("No.1","测试");
+		map.clear();
 		try{
 			System.out.println(map.get("No.1"));
 		}catch(Exception e){
